@@ -80,12 +80,12 @@ The sidebar navigation is controlled by the `SIDEBAR` variable in your `src/conf
 export const SIDEBAR = {
   en: [
     { text: "Section Header", header: true },
-    { text: "Introduction", link: "en/introduction" },
-    { text: "Page 2", link: "en/page-2" },
-    { text: "Page 3", link: "en/page-3" },
+    { text: "Introduction", link: "introduction" },
+    { text: "Page 2", link: "page-2" },
+    { text: "Page 3", link: "page-3" },
 
     { text: "Another Section", header: true },
-    { text: "Page 4", link: "en/page-4" },
+    { text: "Page 4", link: "page-4" },
   ],
 };
 ```
@@ -129,7 +129,7 @@ Last step: you'll need to add a new entry to your sidebar, to create the table o
 export const SIDEBAR = {
   en: [
     { text: 'Section Header', header: true, },
-    { text: 'Introduction', link: 'en/introduction' },
+    { text: 'Introduction', link: 'introduction' },
     // ...
   ],
 +  es: [
@@ -146,7 +146,7 @@ If you plan to use Spanish as the the default language, you just need to modify 
 
 ```diff
 <script>
-- window.location.pathname = `/en/introduction`;
+- window.location.pathname = `/introduction`;
 + window.location.pathname = `/es/introduction`;
 </script>
 ```
