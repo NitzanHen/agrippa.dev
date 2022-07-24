@@ -1,6 +1,6 @@
 ---
 title: Typescript
-description: Docs for Agrippa's integration with Typescript
+description: Docs for configuring Agrippa in Typescript environments
 setup: |
   import Callout from '../../components/Callout.astro'
 layout: ../../layouts/MainLayout.astro
@@ -9,10 +9,9 @@ layout: ../../layouts/MainLayout.astro
 <Callout type="success">
   <p slot="header">Agrippa has first-class support for Typescript projects</p>
 The basic functionality should work straight out of the box - Agrippa automatically detects Typescript projects (through the existence of a `tsconfig.json` file) and its generated code is fully suited for a Typescript project.
+
 So, for typical projects, you don't need to do anything special!
 </Callout>
-
-In terms of customizability, Agrippa provides the following options:
 
 ## Explicitly enable/disable Typescript
 
@@ -25,7 +24,8 @@ import { defineConfig } from "agrippa";
 export default defineConfig({
   options: {
     // ...
-    typescript: true, // new line
+
+    typescript: true,
   },
   // ...
 });
@@ -47,7 +47,6 @@ export default defineConfig({
   options: {
     // ...
 
-    // new lines
     typescriptOptions: {
       propDeclaration: "type",
     },
@@ -69,10 +68,8 @@ If your tsconfig has a different name, or cannot reliably be found by the method
 import { defineConfig } from "agrippa";
 
 export default defineConfig({
-  options: {
-    // ...
-  },
-  // new lines
+  //...
+
   files: {
     tsconfig: "path/to/tsconfig.json", //TODO test
   },
