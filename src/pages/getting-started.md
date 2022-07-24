@@ -115,7 +115,7 @@ The command will create a new directory under your current working directory, `M
 - `index.ts` is a standard index file - currently it only exports everything from the main component code.
 
 Back in your terminal, the output should be similar to this:
-![MyFirstComponent output](../../public/tutorial-example-output-first.png)
+![MyFirstComponent output](../../tutorial-example-output-first.png)
 
 Note how Agrippa detects you're working in React and Typescript without any configuration on your part! One of Agrippa's design principle is auto-detection of the project's stack - providing you good results with minimal friction.
 
@@ -154,7 +154,7 @@ pnpx agrippa gen my-second-component
 ```
 
 This time, the output should also contain information about a created CSS file:
-![MySecondComponent output](../../public/tutorial-example-output-second.png)
+![MySecondComponent output](../../tutorial-example-output-second.png)
 
 Note that the created file is by default a CSS module.
 
@@ -186,7 +186,7 @@ pnpx agrippa gen my-third-component
 ```
 
 Now, the output should contain information about `MyThirdComponent.styles.ts` being created:
-![MyThirdComponent output](../../public/tutorial-example-output-third.png)
+![MyThirdComponent output](../../tutorial-example-output-third.png)
 
 <Callout type="tip">
 	<p slot="header">Tip: Overriding styles</p>

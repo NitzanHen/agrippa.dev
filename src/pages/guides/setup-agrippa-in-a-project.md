@@ -8,7 +8,7 @@ layout: ../../layouts/MainLayout.astro
 
 
 <Callout type="tip">
-  <p slot="header">If this is your first time trying Agrippa, you may want to follow [the tutorial](obsidian://open?vault=Notes&file=Agrippa%20docs%2Ftutorials%2FGetting%20Started%20with%20Agrippa) instead!</p>
+  <p slot="header">If this is your first time trying Agrippa, you may want to follow [the tutorial](../getting-started) instead!</p>
 </Callout>
 
 Let's go over the steps to configure Agrippa in an existing project.
