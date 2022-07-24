@@ -28,6 +28,13 @@ export const SIDEBAR = {
 		{ text: 'Automatically open your IDE to a generated component', link: 'guides/automatically-open-your-ide-to-a-generated-component' },
 
 		{ text: 'Environments', header: true },
-		{ text: 'Typescript', link: 'environments/typescript' }
+		{ text: 'Typescript', link: 'environments/typescript' },
+		{ text: 'React (WIP)' },
+		{ text: 'Solid.js (WIP)' },
+		{ text: 'Preact (WIP)' },
+		{ text: 'React Native (WIP)' },
+		{ text: 'Vue (Coming soon)' },
+		{ text: 'Svelte (Coming soon)' },
+		{ text: 'Storybook (Coming soon)' },
 	],
 };
