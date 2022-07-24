@@ -25,6 +25,9 @@ export const SIDEBAR = {
 		{ text: 'Guides', header: true },
 		{ text: 'Set up Agrippa in a project', link: 'guides/setup-agrippa-in-a-project' },
 		{ text: 'Lint & Prettify created files', link: 'guides/lint-and-prettify-created-files' },
-		{ text: 'Automatically open your IDE to a generated component', link: 'guides/automatically-open-your-ide-to-a-generated-component' }
+		{ text: 'Automatically open your IDE to a generated component', link: 'guides/automatically-open-your-ide-to-a-generated-component' },
+
+		{ text: 'Environments', header: true },
+		{ text: 'Typescript', link: 'environments/typescript' }
 	],
 };
