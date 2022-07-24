@@ -10,7 +10,6 @@ import * as CONFIG from '../config';
 const { content = {} } = Astro.props;
 const currentPage = new URL(Astro.request.url).pathname;
 const currentFile = `src/pages${currentPage.replace(/\/$/, '')}.md`;
-const githubEditUrl = CONFIG.GITHUB_EDIT_URL && CONFIG.GITHUB_EDIT_URL + currentFile;
 ---
 
 <html dir={content.dir ?? 'ltr'} lang={content.lang ?? 'en-us'} class="initial">
@@ -103,18 +102,18 @@ const githubEditUrl = CONFIG.GITHUB_EDIT_URL && CONFIG.GITHUB_EDIT_URL + current
 	</head>
 
 	<body>
-		<Header {currentPage} />
+		<Header />
 		<main class="layout">
 			<aside id="grid-left" class="grid-sidebar" title="Site Navigation">
-				<LeftSidebar {currentPage} />
+				<LeftSidebar currentPage={currentPage} />
 			</aside>
 			<div id="grid-main">
-				<PageContent {content} {githubEditUrl}>
+				<PageContent {content}>
 					<slot />
 				</PageContent>
 			</div>
 			<aside id="grid-right" class="grid-sidebar" title="Table of Contents">
-				<RightSidebar {content} {githubEditUrl} />
+				<RightSidebar {content} />
 			</aside>
 		</main>
 	</body>

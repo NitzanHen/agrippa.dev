@@ -18,8 +18,7 @@ export const KNOWN_LANGUAGES = {
 	English: 'en',
 };
 
-export const SIDEBAR = {
-	en: [
+export const SIDEBAR = [
 		{ text: 'Getting Started with Agrippa', link: 'getting-started' },
 		
 		{ text: 'Guides', header: true },
@@ -29,12 +28,11 @@ export const SIDEBAR = {
 
 		{ text: 'Environments', header: true },
 		{ text: 'Typescript', link: 'environments/typescript' },
-		{ text: 'React (WIP)' },
+		{ text: 'React', link: 'environments/react' },
 		{ text: 'Solid.js (WIP)' },
 		{ text: 'Preact (WIP)' },
 		{ text: 'React Native (WIP)' },
 		{ text: 'Vue (Coming soon)' },
 		{ text: 'Svelte (Coming soon)' },
 		{ text: 'Storybook (Coming soon)' },
-	],
-};
+	];
