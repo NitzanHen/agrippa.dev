@@ -20,13 +20,11 @@ export const KNOWN_LANGUAGES = {
 
 export const SIDEBAR = {
 	en: [
-		{ text: 'Section Header', header: true },
-		{ text: 'Introduction', link: 'introduction' },
+		{ text: 'Getting Started with Agrippa', link: 'getting-started' },
 		
-		{ text: 'How-Tos', header: true },
-		{ text: 'Set up Agrippa', link: 'how-to/setup-agrippa' },
-
-		{ text: 'Another Section', header: true },
-		{ text: 'Page 4', link: 'page-4' },
+		{ text: 'Guides', header: true },
+		{ text: 'Set up Agrippa in a project', link: 'guides/setup-agrippa-in-a-project' },
+		{ text: 'Lint & Prettify created files', link: 'guides/lint-and-prettify-created-files' },
+		{ text: 'Automatically open your IDE to a generated component', link: 'guides/automatically-open-your-ide-to-a-generated-component' }
 	],
 };

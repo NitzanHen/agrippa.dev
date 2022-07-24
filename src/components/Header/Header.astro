@@ -1,35 +1,18 @@
 ---
-import { getLanguageFromURL, KNOWN_LANGUAGE_CODES } from '../../languages.ts';
-import * as CONFIG from '../../config.ts';
 import AstroLogo from './AstroLogo.astro';
 import SkipToContent from './SkipToContent.astro';
-import SidebarToggle from './SidebarToggle.tsx';
-import LanguageSelect from './LanguageSelect.tsx';
-import Search from './Search.tsx';
-
-const { currentPage } = Astro.props;
-const lang = currentPage && getLanguageFromURL(currentPage);
 ---
 
 <header>
 	<SkipToContent />
 	<nav class="nav-wrapper" title="Top Navigation">
-		<div class="menu-toggle">
-			<SidebarToggle client:idle />
-		</div>
 		<div class="logo flex">
 			<a href="/">
 				<AstroLogo size={40} />
-				<h1>{CONFIG.SITE.title ?? "Documentation"}</h1>
+				<h1>Documentation</h1>
 			</a>
 		</div>
 		<div style="flex-grow: 1;"></div>
-		{KNOWN_LANGUAGE_CODES.length > 1 && <LanguageSelect lang={lang} client:idle />}
-		{CONFIG.ALGOLIA && (
-			<div class="search-item">
-				<Search client:idle />
-			</div>
-		)}
 	</nav>
 </header>
 
@@ -118,23 +101,5 @@ const lang = currentPage && getLanguageFromURL(currentPage);
 	:root {
 		--docsearch-primary-color: var(--theme-accent);
 		--docsearch-logo-color: var(--theme-text);
-	}
-
-	.search-item {
-		display: none;
-		position: relative;
-		z-index: 10;
-		flex-grow: 1;
-		padding-right: 0.7rem;
-		display: flex;
-		max-width: 200px;
-	}
-	:global(.search-item > *) {
-		flex-grow: 1;
-	}
-	@media (min-width: 50em) {
-		.search-item {
-			max-width: 400px;
-		}
 	}
 </style>
