@@ -1,5 +1,4 @@
 import type { FunctionalComponent } from 'preact';
-import { h } from 'preact';
 import './LanguageSelect.css';
 import { KNOWN_LANGUAGES, langPathRegex } from '../../languages';
 
