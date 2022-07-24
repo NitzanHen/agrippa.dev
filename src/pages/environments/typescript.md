@@ -6,8 +6,11 @@ setup: |
 layout: ../../layouts/MainLayout.astro
 ---
 
-**Agrippa has first-class support for Typescript projects.** The basic functionality should work straight our of the box - Agrippa automatically detects Typescript projects (through the existence of a `tsconfig.json` file) and its generated code is fully suited for a Typescript project.
+<Callout type="success">
+  <p slot="header">Agrippa has first-class support for Typescript projects</p>
+The basic functionality should work straight out of the box - Agrippa automatically detects Typescript projects (through the existence of a `tsconfig.json` file) and its generated code is fully suited for a Typescript project.
 So, for typical projects, you don't need to do anything special!
+</Callout>
 
 In terms of customizability, Agrippa provides the following options:
 
