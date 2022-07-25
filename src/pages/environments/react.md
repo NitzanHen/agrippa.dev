@@ -26,13 +26,15 @@ import { defineConfig, Environment } from "agrippa";
 
 export default defineConfig({
   options: {
-    environment: Environment.REACT // equivalent to "react"
+    environment: Environment.REACT
 
     // ...
   },
   // ...
 });
 ```
+
+`Environment.REACT` is equivalent to `"react"`, but using the built-in Styling enum is clearer and less prone to errors.
 
 ## importing React
 

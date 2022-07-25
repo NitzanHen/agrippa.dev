@@ -133,12 +133,12 @@ import { defineConfig, Styling } from "agrippa";
 
 export default defineConfig({
   options: {
-    styling: Styling.CSS, // new line!
+    styling: Styling.CSS, // new line
   },
 });
 ```
 
-`Styling.CSS` could be replaced for the string `"css"`, but using the built-in Styling enum is clearer and less prone to errors.
+`Styling.CSS` is equivalent to `"css"`, but using the built-in Styling enum is clearer and less prone to errors.
 
 Now, let's create another component:
 
