@@ -37,7 +37,7 @@ export default defineConfig({
 By default, Agrippa generates CSS stylesheets as CSS Modules, as indicated by the `.module.css` suffix of the generated filename.
 
 <Callout type="tip">
-  <p slot="header">Tip - using CSS modules</p>
+  <p slot="header">Tip - using modules</p>
 If you're using plain CSS for styling, we recommend using CSS modules, as they're convenient, easy to use and reason about, and solve many scalability and maintainablity issues in the long run. They're also supported out-of-the-box by most modern dev environments.
 </Callout>
 
