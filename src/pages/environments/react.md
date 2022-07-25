@@ -34,13 +34,13 @@ export default defineConfig({
 });
 ```
 
-`Environment.REACT` is equivalent to `"react"`, but using the built-in Styling enum is clearer and less prone to errors.
+`Environment.REACT` is equivalent to `"react"`, but using the built-in `Environment` enum is clearer and less prone to errors.
 
 ## importing React
 
 React's [new JSX transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) allows writing JSX without importing React at the top of each file (among other features). For most new projects, this should already be in place, but older environments or custom setups might still require it. 
 
-In accordance with, **Agrippa does not import React by default**, but this can easily be configured through `options.reactOptions.importReact` field in `agrippa.config.mjs`, like so:
+In accordance with this, **Agrippa does not import React by default**, but this can easily be configured through `options.reactOptions.importReact` field in `agrippa.config.mjs`, like so:
 
 ```js
 // @ts-check

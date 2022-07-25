@@ -26,7 +26,7 @@ export const SIDEBAR = [
 		{ text: 'React', link: 'environments/react' },
 		{ text: 'Solid.js (WIP)' },
 		{ text: 'Preact (WIP)' },
-		{ text: 'React Native (WIP)' },
+		{ text: 'React Native', link: 'environments/react-native' },
 		{ text: 'Vue (Coming soon)' },
 		{ text: 'Svelte (Coming soon)' },
 		{ text: 'Storybook (Coming soon)' },
