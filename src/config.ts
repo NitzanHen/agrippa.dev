@@ -25,7 +25,7 @@ export const SIDEBAR = [
 		{ text: 'Typescript', link: 'environments/typescript' },
 		{ text: 'React', link: 'environments/react' },
 		{ text: 'Solid.js', link: 'environments/solidjs' },
-		{ text: 'Preact (WIP)' },
+		{ text: 'Preact', link: 'environments/preact' },
 		{ text: 'React Native', link: 'environments/react-native' },
 		{ text: 'Vue (Coming soon)' },
 		{ text: 'Svelte (Coming soon)' },
