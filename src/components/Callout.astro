@@ -1,6 +1,6 @@
 ---
 import Icon from './Icon.astro';
-import { mdiLightbulbOutline, mdiApplicationBracesOutline, mdiExclamation, mdiCheckOutline } from '@mdi/js';
+import { mdiLightbulbOutline, mdiApplicationBracesOutline, mdiExclamationThick, mdiCheckOutline } from '@mdi/js';
 import { capitalize } from '../utils';
 
 export enum CalloutType {
@@ -20,7 +20,7 @@ const hasBody = Astro.slots.has('default');
 const iconPaths: Record<CalloutType, string> = {
 	[CalloutType.TIP]: mdiLightbulbOutline,
 	[CalloutType.EXAMPLE]: mdiApplicationBracesOutline,
-	[CalloutType.WARNING]: mdiExclamation,
+	[CalloutType.WARNING]: mdiExclamationThick,
 	[CalloutType.SUCCESS]: mdiCheckOutline
 };
 const icon = iconPaths[type];
