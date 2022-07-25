@@ -30,6 +30,7 @@ export const SIDEBAR = [
 		{ text: 'Vue (Coming soon)' },
 		{ text: 'Svelte (Coming soon)' },
 		{ text: 'Storybook (Coming soon)' },
+		{ text: 'CSS', link: 'environments/css' },
 
 		{ text: 'Guides', header: true },
 		{ text: 'Set up Agrippa in a project', link: 'guides/setup-agrippa-in-a-project' },
