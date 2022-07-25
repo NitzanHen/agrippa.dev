@@ -20,11 +20,6 @@ export const KNOWN_LANGUAGES = {
 
 export const SIDEBAR = [
 		{ text: 'Getting Started with Agrippa', link: 'getting-started' },
-		
-		{ text: 'Guides', header: true },
-		{ text: 'Set up Agrippa in a project', link: 'guides/setup-agrippa-in-a-project' },
-		{ text: 'Lint & Prettify created files', link: 'guides/lint-and-prettify-created-files' },
-		{ text: 'Automatically open your IDE to a generated component', link: 'guides/automatically-open-your-ide-to-a-generated-component' },
 
 		{ text: 'Environments', header: true },
 		{ text: 'Typescript', link: 'environments/typescript' },
@@ -35,4 +30,9 @@ export const SIDEBAR = [
 		{ text: 'Vue (Coming soon)' },
 		{ text: 'Svelte (Coming soon)' },
 		{ text: 'Storybook (Coming soon)' },
+
+		{ text: 'Guides', header: true },
+		{ text: 'Set up Agrippa in a project', link: 'guides/setup-agrippa-in-a-project' },
+		{ text: 'Lint & Prettify created files', link: 'guides/lint-and-prettify-created-files' },
+		{ text: 'Automatically open your IDE to a generated component', link: 'guides/automatically-open-your-ide-to-a-generated-component' },
 	];
