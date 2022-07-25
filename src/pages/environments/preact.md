@@ -8,7 +8,7 @@ layout: ../../layouts/MainLayout.astro
 
 <Callout type="success">
   <p slot="header">Agrippa has first-class support for Preact projects</p>
-Core functionality should work straight out of the box - Agrippa automatically detects Preact projects in typical setups, and generates components accordingly.
+Core functionality should work out of the box - Agrippa automatically detects Preact projects in typical setups, and generates components accordingly.
 </Callout>
 
 <Callout type="warning">

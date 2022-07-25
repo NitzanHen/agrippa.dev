@@ -8,7 +8,7 @@ layout: ../../layouts/MainLayout.astro
 
 <Callout type="success">
   <p slot="header">Agrippa has first-class support for React projects</p>
-Core functionality should work straight out of the box - Agrippa automatically detects React projects in typical setups, and generates components accordingly.
+Core functionality should work out of the box - Agrippa automatically detects React projects in typical setups, and generates components accordingly.
 </Callout>
 
 ## Auto-detection and explicitly setting the environment
