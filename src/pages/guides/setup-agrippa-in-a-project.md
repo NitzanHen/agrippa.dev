@@ -20,11 +20,11 @@ First, install it as a dev dependency using your favorite package manager:
 
 ```bash
 # npm
-npm i -D agrippa
+npm i -D agrippa@beta
 # or
-yarn add --dev agrippa
+yarn add --dev agrippa@beta
 # or
-pnpm add -D agrippa
+pnpm add -D agrippa@beta
 ```
 
 Then, create a config by running:
