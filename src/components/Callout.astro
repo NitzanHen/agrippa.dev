@@ -1,13 +1,14 @@
 ---
 import Icon from './Icon.astro';
-import { mdiLightbulbOutline, mdiApplicationBracesOutline, mdiExclamationThick, mdiCheckOutline } from '@mdi/js';
+import { mdiLightbulbOutline, mdiApplicationBracesOutline, mdiExclamationThick, mdiCheckOutline, mdiHammer, mdiAccountHardHatOutline } from '@mdi/js';
 import { capitalize } from '../utils';
 
 export enum CalloutType {
 	TIP = 'tip',
 	EXAMPLE = 'example',
 	WARNING = 'warning',
-	SUCCESS = 'success'
+	SUCCESS = 'success',
+	WIP = 'work-in-progress'
 }
 
 export interface Props {
@@ -21,7 +22,8 @@ const iconPaths: Record<CalloutType, string> = {
 	[CalloutType.TIP]: mdiLightbulbOutline,
 	[CalloutType.EXAMPLE]: mdiApplicationBracesOutline,
 	[CalloutType.WARNING]: mdiExclamationThick,
-	[CalloutType.SUCCESS]: mdiCheckOutline
+	[CalloutType.SUCCESS]: mdiCheckOutline,
+	[CalloutType.WIP]: mdiAccountHardHatOutline
 };
 const icon = iconPaths[type];
 ---
@@ -49,6 +51,12 @@ const icon = iconPaths[type];
 		--color: hsla(145, 100%, 39%, 1);
 		--header-background: hsla(145, 100%, 39%, 0.2);
 		--background-color: hsla(145, 100%, 39%, 0.05);
+	}
+
+	.work-in-progress {
+		--color: hsla(0, 5%, 50%, 1);
+		--header-background: hsla(0, 5%, 50%, 0.2);
+		--background-color: hsla(0, 5%, 50%, 0.05);
 	}
 
 	.root {

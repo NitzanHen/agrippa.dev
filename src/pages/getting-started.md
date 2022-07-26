@@ -74,6 +74,7 @@ In your terminal, run:
 ```bash
 npx agrippa init
 ```
+(TODO yarn/pnpm alternatives)
 
 You should now see a new file in your root directory (where `agrippa init` was called), `agrippa.config.mjs`. Its contents should look like this:
 
