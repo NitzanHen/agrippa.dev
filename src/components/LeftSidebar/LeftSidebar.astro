@@ -1,50 +1,20 @@
 ---
 import { SIDEBAR } from '../../config';
+import { Tree } from '../../utils/Tree';
+import { LeftSidebarLink } from './LeftSideBarLink';
+import LeftSidebarRow from './LeftSidebarRow.jsx';
 
 export interface Props {
 	currentPage: string;
+	linkTree: Tree<LeftSidebarLink>
 }
 
-const { currentPage } = Astro.props;
+const { currentPage, linkTree } = Astro.props as Props;
 const currentPageMatch = currentPage.slice(1);
-
-// SIDEBAR is a flat array. Group it by sections to properly render.
-const sidebarSections = SIDEBAR.reduce((col, item, i) => {
-	// If the first item is not a section header, create a new container section.
-	if (i === 0) {
-		if (!item.header) {
-			const pesudoSection = { text: "" };
-			col.push({ ...pesudoSection, children: [] });
-		}
-	}
-	if (item.header) {
-		col.push({ ...item, children: [] });
-	} else {
-		col[col.length - 1].children.push(item);
-	}
-	return col;
-}, []);
 ---
 
 <nav aria-labelledby="grid-left">
-	<ul class="nav-groups">
-		{sidebarSections.map((section) => (
-			<li>
-				<div class="nav-group">
-					<h2 class="nav-group-title">{section.text}</h2>
-					<ul>
-						{section.children.map((child) => (
-							<li class="nav-link">
-								<a href={child.link && `${Astro.site.pathname}${child.link}`} aria-current={`${currentPageMatch === child.link ? 'page' : 'false'}`}>
-									{child.text}
-								</a>
-							</li>
-						))}
-					</ul>
-				</div>
-			</li>
-		))}
-	</ul>
+	<LeftSidebarRow tree={linkTree} client:load />
 </nav>
 
 <script is:inline>
