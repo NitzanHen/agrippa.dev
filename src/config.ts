@@ -41,7 +41,7 @@ export const SIDEBAR = [
 		{ text: 'Reference', header: true },
 		{ text: 'Config Reference', link: 'reference/config' },
 		{ text: 'Config options', link: 'reference/config-options' },
-		{ text: 'CLI Reference (WIP)', link: 'reference/cli' },
+		{ text: 'CLI Reference', link: 'reference/cli' },
 		{ text: 'Built-in plugins (WIP)', link: 'reference/built-in-plugins' }
 
 	];
