@@ -37,11 +37,12 @@ export const SIDEBAR = [
 		{ text: 'Set up Agrippa in a project', link: 'guides/setup-agrippa-in-a-project' },
 		{ text: 'Lint & Prettify created files', link: 'guides/lint-and-prettify-created-files' },
 		{ text: 'Automatically open your IDE to a generated component', link: 'guides/automatically-open-your-ide-to-a-generated-component' },
+		{ text: 'Write your first plugin (Coming soon)' },
 
 		{ text: 'Reference', header: true },
 		{ text: 'Config Reference', link: 'reference/config' },
 		{ text: 'Config options', link: 'reference/config-options' },
 		{ text: 'CLI Reference', link: 'reference/cli' },
-		{ text: 'Built-in plugins (WIP)', link: 'reference/built-in-plugins' }
+		{ text: 'Built-in plugins (Coming soon)', /* link: 'reference/built-in-plugins' */ }
 
 	];
