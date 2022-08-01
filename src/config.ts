@@ -1,6 +1,6 @@
 export const SITE = {
-	title: 'Documentation',
-	description: 'Your website description.',
+	title: 'Agrippa docs',
+	description: 'Documentation for Agrippa, the frontend component CLI',
 	defaultLanguage: 'en_US',
 };
 
@@ -12,10 +12,6 @@ export const OPEN_GRAPH = {
 			' with a purple saturn-like planet floating in the right foreground',
 	},
 	twitter: 'astrodotbuild',
-};
-
-export const KNOWN_LANGUAGES = {
-	English: 'en',
 };
 
 export const SIDEBAR = [

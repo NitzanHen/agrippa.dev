@@ -16,7 +16,7 @@ const currentFile = `src/pages${currentPage.replace(/\/$/, '')}.md`;
 	<head>
 		<HeadCommon />
 		<HeadSEO {content} canonicalURL={Astro.canonicalURL} />
-		<title>{content.title ? `${content.title} 🚀 ${CONFIG.SITE.title}` : CONFIG.SITE.title}</title>
+		<title>{content.title ? `${content.title} - ${CONFIG.SITE.title}` : CONFIG.SITE.title}</title>
 		<style>
 			body {
 				width: 100%;
