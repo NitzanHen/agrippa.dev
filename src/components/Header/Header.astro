@@ -3,7 +3,7 @@ import AgrippaLogo from './AgrippaLogo.astro';
 ---
 
 <header>
-	<nav class="nav-wrapper" title="Top Navigation">
+	<nav class="nav-wrapper">
 		<div class="logo flex">
 			<a href="/">
 				<AgrippaLogo size={40} />
@@ -17,7 +17,6 @@ import AgrippaLogo from './AgrippaLogo.astro';
 <style>
 	header {
 		z-index: 11;
-		height: var(--theme-navbar-height);
 		width: 100%;
 		background-color: var(--theme-navbar-bg);
 		display: flex;
@@ -25,7 +24,6 @@ import AgrippaLogo from './AgrippaLogo.astro';
 		justify-content: center;
 		overflow: hidden;
 		position: sticky;
-		top: 0;
 	}
 
 	.logo {
@@ -36,34 +34,21 @@ import AgrippaLogo from './AgrippaLogo.astro';
 		font-size: 2rem;
 		flex-shrink: 0;
 		font-weight: 600;
-		line-height: 1;
-		color: hsla(var(--color-base-white), 100%, 1);
 		gap: 0.25em;
 		z-index: -1;
+		color: var(--theme-text)
 	}
 
 	.logo a {
 		display: flex;
-		padding: 0.5em 0.25em;
-		margin: -0.5em -0.25em;
 		text-decoration: none;
 		font-weight: bold;
-	}
-
-	.logo a {
-		transition: color 100ms ease-out;
-		color: var(--theme-text);
-	}
-
-	.logo a:hover,
-	.logo a:focus {
-		color: var(--theme-text-accent);
+		color: inherit;
 	}
 
 	.logo h1 {
 		display: none;
 		font: inherit;
-		color: inherit;
 		margin: 0;
 	}
 
@@ -80,7 +65,7 @@ import AgrippaLogo from './AgrippaLogo.astro';
 	@media (min-width: 50em) {
 		header {
 			position: static;
-			padding: 2rem 0rem;
+			padding: 1.5rem 0rem;
 		}
 		.logo {
 			width: auto;
