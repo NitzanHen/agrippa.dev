@@ -1,6 +1,36 @@
 ---
-title: Heyy
+title: Home
 layout: ../layouts/MainLayout.astro
+setup: |
+  import Callout from '../components/Callout.astro'
 ---
 
-dd
+Agrippa is a CLI that helps frontend developers generate new components without the boilerplate: in a single command, it can create all the folders and files you need in a full component, with starting code tailored to your stack.
+
+It's extermly easy to pick up and use in both new and existing projects, but also has a plugin system that provides customizability when it's necessary.
+
+<Callout type="rocket">
+  <p slot="header">To get started, visit [the tutorial](./getting-started.md)!</p>
+</Callout>
+
+
+## Supported environments 
+
+Agrippa supports many frameworks, styling solutions, and other technologies, with more coming in the future:
+
+- Frameworks: **React**, **Preact**, **Solid.js**, **React Native**
+<br/>On the roadmap: *Vue*, *Svelte*, *Astro*, *Next.js*
+
+- Styling solutions: **CSS**, **SCSS**, **JSS**, **Styled-components**
+<br/>On the roadmap: suggest your own!
+
+- Testing solutions: WIP.
+<br/>On the roadmap: *Jest*, *Vitest*, *react-testing-library*. Suggest your own!
+
+- Others: **Typescript**
+<br/>On the roadmap: *Storybook*
+
+## Community
+
+TODO
+

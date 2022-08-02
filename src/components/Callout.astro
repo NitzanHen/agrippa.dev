@@ -1,6 +1,6 @@
 ---
 import Icon from './Icon.astro';
-import { mdiLightbulbOutline, mdiApplicationBracesOutline, mdiExclamationThick, mdiCheckOutline, mdiHammer, mdiAccountHardHatOutline } from '@mdi/js';
+import { mdiLightbulbOutline, mdiApplicationBracesOutline, mdiExclamationThick, mdiCheckOutline, mdiHammer, mdiAccountHardHatOutline, mdiRocketLaunchOutline } from '@mdi/js';
 import { capitalize } from '../utils';
 
 export enum CalloutType {
@@ -8,7 +8,8 @@ export enum CalloutType {
 	EXAMPLE = 'example',
 	WARNING = 'warning',
 	SUCCESS = 'success',
-	WIP = 'work-in-progress'
+	WIP = 'work-in-progress',
+	ROCKET = 'rocket'
 }
 
 export interface Props {
@@ -23,7 +24,9 @@ const iconPaths: Record<CalloutType, string> = {
 	[CalloutType.EXAMPLE]: mdiApplicationBracesOutline,
 	[CalloutType.WARNING]: mdiExclamationThick,
 	[CalloutType.SUCCESS]: mdiCheckOutline,
-	[CalloutType.WIP]: mdiAccountHardHatOutline
+	[CalloutType.WIP]: mdiAccountHardHatOutline,
+	[CalloutType.ROCKET]: mdiRocketLaunchOutline
+
 };
 const icon = iconPaths[type];
 ---
@@ -54,6 +57,12 @@ const icon = iconPaths[type];
 	}
 
 	.work-in-progress {
+		--color: hsla(0, 5%, 50%, 1);
+		--header-background: hsla(0, 5%, 50%, 0.2);
+		--background-color: hsla(0, 5%, 50%, 0.05);
+	}
+
+	.rocket {
 		--color: hsla(0, 5%, 50%, 1);
 		--header-background: hsla(0, 5%, 50%, 0.2);
 		--background-color: hsla(0, 5%, 50%, 0.05);
