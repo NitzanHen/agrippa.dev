@@ -10,7 +10,7 @@ One of Agrippa's neat power features is post commands, which allow you to run an
 
 In this guide, we'll define a post command that'll automatically open our IDE at the generated component file, saving you the trouble of navigating to them yourself. In large-scale projects, this can be a real time saver!
 
-Our starting point for this guide is a project that already has Agrippa set up - if you have yet to set it up, follow the steps in [Set up Agrippa in a project](./setup-agrippa-in-a-project), and come back here once you're done!
+Our starting point for this guide is a project that already has Agrippa set up - if you have yet to set it up, follow the steps in [Set up Agrippa in a project](setup-agrippa-in-a-project), and come back here once you're done!
 
 Now, our first step is determining *which* command we should be running to open our IDE at a given path. Refer to this handy chart:
 
