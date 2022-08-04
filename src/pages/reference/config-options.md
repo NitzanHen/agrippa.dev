@@ -12,6 +12,9 @@ This page lists and describes all of the config's options. *No option is require
 
 Which front-end framework to generate the components for.
 
+**Type**: Any value of the `Framework` enum or any string. <br/>
+**Default**: greatly depends on your project structure.
+
 ## typescript
 
 Whether to generate Typescript files and code.
@@ -143,8 +146,7 @@ We recommend having this turned on.
 When Agrippa is run, it sends *anonymous* telemetry to Agrippa's statistics service.
 Setting this option to `false` disables this behaviour.
 
-Privacy is an important matter to me personally, and so I'm urged to emphasize that Agrippa
-only sends basic information about how you use it, completely anonymously.
+Privacy is an important matter to me personally, and so I'm urged to emphasize that Agrippa only sends basic information about how you use it, completely anonymously.
 The purpose of this is to allow us to gain basic insights of how people use Agrippa.
 
 You can find the relevant source code in [`TelemetryPlugin.ts`](https://github.com/NitzanHen/agrippa/blob/main/src/plugin/TelemetryPlugin.ts).
