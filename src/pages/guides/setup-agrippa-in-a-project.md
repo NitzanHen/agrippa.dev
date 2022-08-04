@@ -48,7 +48,7 @@ The next and final step is to fill in options based on your project configuratio
 
 - **Styling**: Agrippa support a few styling solutions, including CSS, SCSS and styled-components. Find the full list, as well as other useful information, at [[Styling solutions]].
 - **Base directory**: a base directory is the directory under which your project's components are located (e.g. `src/components`). For more information, see [[Base directories]].
-- **Post-commands**: a post command is a command that runs after the main Agrippa process completes, and can access some of its data. See its common example usages in [[Automatically open an IDE to a generated component]] and [[Lint & Prettify created files]], or read more about it in [[Post commands]].
+- **Post-commands**: a post command is a command that runs after the main Agrippa process completes, and can access some of its data. See its common example usages in [Automatically open an IDE to a generated component](./automatically-open-your-ide-to-a-generated-component) and [Lint & Prettify created files](./lint-and-prettify-created-files), or read more about it in [[Post commands]].
 
 - _(Coming soon)_ Testing frameworks
 - _(Coming soon)_ Storybook
@@ -59,7 +59,7 @@ The next and final step is to fill in options based on your project configuratio
 
   - **Framework**: as long as you have one of the supported frameworks installed (React, SolidJS, Preact or React Native), Agrippa should create components for it automatically. If you have more than one framework set up, you should explicitly specify which framework to use in the config or in the command line (see [options.reference](obsidian://open?vault=Notes&file=Agrippa%20docs%2Freference%2FGeneration%20Options)).
 
-  - **Typescript**: Agrippa searches a `tsconfig.json` file in your project. If it finds one - it generates Typescript files by default (with all the bells and whistles), otherwise it generates vanilla JavaScript. For more information on configuring this behavior, visit our [[Typescript]] page.
+  - **Typescript**: Agrippa searches a `tsconfig.json` file in your project. If it finds one - it generates Typescript files by default (with all the bells and whistles), otherwise it generates vanilla JavaScript. For more information on configuring this behavior, visit our [Typescript](../environments/typescript) page.
 </Callout>
 
 And that's it! Agrippa should be be set up properly in your project.

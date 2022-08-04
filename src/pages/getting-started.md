@@ -8,7 +8,7 @@ layout: ../layouts/MainLayout.astro
 
 <Callout type="tip">
 
-If you're already familiar with Agrippa, and want to set it up in an existing project, see [Set up Agrippa in a project](guides/setup-agrippa-in-a-project.md).
+If you're already familiar with Agrippa, and want to set it up in an existing project, see [Set up Agrippa in a project](guides/setup-agrippa-in-a-project).
 
 </Callout>
 
@@ -22,8 +22,6 @@ Without further ado, let's begin:
 First, if you don't already have a project set up, let's spin up one:
 
 We'll use [Vite](https://vitejs.dev/) to scaffold a new environment with React & Typescript. Create a new Vite project & install dependencies from your terminal, like so:
-
-(npm | yarn | pnpm \[test pnpm\])
 
 ```bash
 # npm
@@ -71,10 +69,18 @@ pnpm add -D agrippa@beta
 Then, let's create a **config file** - this is you can configure Agrippa for your current project.
 In your terminal, run:
 
+
+
 ```bash
+# npm
 npx agrippa init
+
+# yarn
+yarn agrippa init
+
+# pnpm
+pnpx agrippa init
 ```
-(TODO yarn/pnpm alternatives)
 
 You should now see a new file in your root directory (where `agrippa init` was called), `agrippa.config.mjs`. Its contents should look like this:
 
@@ -91,9 +97,9 @@ We'll play around with the config in a few minutes, but for now let's leave it a
 
 ## Your first component
 
-We're now ready to start generating component!
+We're now ready to start generating components!
 
-Let's start with a basic one; in your terminal, run:
+Let's start with a basic one. In your terminal, run:
 
 ```bash
 # npm
@@ -139,7 +145,7 @@ export default defineConfig({
 });
 ```
 
-`Styling.CSS` is equivalent to `"css"`, but using the built-in Styling enum is clearer and less prone to errors.
+`Styling.CSS` is equivalent to `"css"`, but using the built-in `Styling` enum is clearer and less prone to errors.
 
 Now, let's create another component:
 
@@ -198,7 +204,7 @@ For example, if most of your components have CSS files for styles, but this next
 
 By now, we hope you've already gained an appreciation for how easy it is to generate components from scratch with Agrippa. It has a few additional tools at its disposal to adapt itself to your project and increase your productivity.
 
-In this tutorial, though, we'll finish with one last neat feature:
+We'll conclude this tutorial with one last neat feature:
 
 ## Post Commands
 
@@ -222,8 +228,9 @@ export default defineConfig({
   plugins: [new PostCommandPlugin("code -r <componentPath>")],
 });
 ```
+(note the new import of `PostCommandPlugin` from `agrippa`!)
 
-As seen in the example, a post command as declared as a plugin - the `PostCommandPlugin`, which is one of Agrippa's [[Built-in plugins]]. The argument passed to its constructor is the command to run - in our case the `code` command, which launches VS Code at the path passed to it. `<componentPath>` is the path of the component declaration file.
+As seen in the example, a post command as declared as a plugin - the `PostCommandPlugin`, which is one of Agrippa's built-in plugins. The argument passed to its constructor is the command to run - in our case the `code` command, which launches VS Code at the path passed to it. `<componentPath>` is the path of the component declaration file.
 
 Let's see it in action!
 In your terminal, create yet another component:
@@ -244,8 +251,14 @@ if there aren't any open), and Agrippa should include information about the addi
 
 Isn't this a simple, elegant productivity trick?
 
-## Where to go next
+## Conclusion
 
 Congratulations! You've completed the tutorial - you installed and initialized Agrippa in a project, and have already created four different components, with different configurations! Hopefully, you got a taste for the tool's simplicity and effectiveness, and you can start using it in your projects.
 
-So, what now?
+<!-- ## Where to go next
+
+Congratulations! You've completed the tutorial - you installed and initialized Agrippa in a project, and have already created four different components, with different configurations! Hopefully, you got a taste for the tool's simplicity and effectiveness, and you can start using it in your projects.
+
+So, what now? -->
+
+

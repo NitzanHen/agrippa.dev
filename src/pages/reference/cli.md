@@ -31,7 +31,7 @@ The `gen` (or `generate`) command is used to generate a component.
 It expects a single positional argument - the name of the component to be generated.
 This name can be passed in kebab case ("component-name") or pascal case ("ComponentName").
 
-`gen`'s options are largely the same as the [Config Options](./config-options.md). A primary difference
+`gen`'s options are largely the same as the [Config Options](./config-options). A primary difference
 is that options passed to the CLI should be written in kebab case (though camelCase will work too).
 
 In terms of the options themselves, the differences are:

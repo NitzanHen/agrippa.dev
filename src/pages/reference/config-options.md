@@ -156,7 +156,7 @@ You can find the relevant source code in [`TelemetryPlugin.ts`](https://github.c
 
 The debug flag makes Agrippa print out additional debug information. It's very useful when debugging.
 
-It can, and most often will, be passed as a [CLI flag](./cli.md) instead of being set in the config.
+It can, and most often will, be passed as a [CLI flag](./cli) instead of being set in the config.
 
 **Type**: `boolean`.
 **Default**: `false`.

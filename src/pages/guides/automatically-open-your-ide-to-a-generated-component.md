@@ -6,11 +6,11 @@ setup: |
 layout: ../../layouts/MainLayout.astro
 ---
 
-One of Agrippa's neat power features is [[Post commands]], which allow you to run any shell command after generating a component, and pass it values from the main Agrippa process, particularly the paths of the generated files.
+One of Agrippa's neat power features is post commands, which allow you to run any shell command after generating a component, and pass it values from the main Agrippa process, particularly the paths of the generated files.
 
 In this guide, we'll define a post command that'll automatically open our IDE at the generated component file, saving you the trouble of navigating to them yourself. In large-scale projects, this can be a real time saver!
 
-Our starting point for this guide is a project that already has Agrippa set up - if you have yet to set it up, follow the steps in [[Set up Agrippa in a project]], and come back here once you're done!
+Our starting point for this guide is a project that already has Agrippa set up - if you have yet to set it up, follow the steps in [Set up Agrippa in a project](./setup-agrippa-in-a-project), and come back here once you're done!
 
 Now, our first step is determining *which* command we should be running to open our IDE at a given path. Refer to this handy chart:
 
@@ -26,7 +26,7 @@ WebStorm | See [their docs](https://www.jetbrains.com/help/webstorm/opening-file
 
 We'll be using VSCode's command in the remainder of this guide, but the same process should work for your favorite IDE with its corresponding command.
 
-The post command itself is configured using the `PostCommandPlugin`, one of Agrippa's [[built-in plugins]].
+The post command itself is configured using the `PostCommandPlugin`, one of Agrippa's built-in plugins.
 
 Open up `agrippa.config.mjs`, located at your project's root. It might look similar to this:
 
