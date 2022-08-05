@@ -24,7 +24,7 @@ npx agrippa init
 npx agrippa gen my-first-component
 ```
 
-<video controls loop>
+<video controls loop autoplay muted>
   <source src="showcase.mp4" type="video/mp4">
 </video>
 
