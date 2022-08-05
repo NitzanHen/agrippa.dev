@@ -43,6 +43,7 @@ const ThemeToggle: FunctionalComponent = () => {
 		}
 		return 'light';
 	});
+	
 
 	useEffect(() => {
 		const root = document.documentElement;
