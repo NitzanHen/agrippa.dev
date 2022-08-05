@@ -8,7 +8,7 @@ layout: ../layouts/MainLayout.astro
 
 <Callout type="tip">
 
-If you're already familiar with Agrippa, and want to set it up in an existing project, see [Set up Agrippa in a project](guides/setup-agrippa-in-a-project).
+If you're already familiar with Agrippa, and want to set it up in an existing project, see [Set up Agrippa in a project](/guides/setup-agrippa-in-a-project).
 
 </Callout>
 

@@ -46,7 +46,7 @@ export default defineConfig({
 
 The next and final step is to fill in options based on your project configuration. These change from one project to another but the most common ones are these (see also the examples below):
 
-- **Styling**: Agrippa support a few styling solutions, including CSS, SCSS and styled-components. Find the full list, as well as other useful information, at [[Styling solutions]].
+- **Styling**: Agrippa support a few styling solutions, including CSS, SCSS and styled-components.
 - **Base directory**: a base directory is the directory under which your project's components are located (e.g. `src/components`). For more information, see [[Base directories]].
 - **Post-commands**: a post command is a command that runs after the main Agrippa process completes, and can access some of its data. See its common example usages in [Automatically open an IDE to a generated component](/guides/automatically-open-your-ide-to-a-generated-component) and [Lint & Prettify created files](/guides/lint-and-prettify-created-files), or read more about it in [[Post commands]].
 
@@ -57,7 +57,7 @@ The next and final step is to fill in options based on your project configuratio
   Agrippa detects a lot about your environment automatically. Particularly, you **don't** need to set the following options for a typical project, as they are already picked up by Agrippa:
   <br/>
 
-  - **Framework**: as long as you have one of the supported frameworks installed (React, SolidJS, Preact or React Native), Agrippa should create components for it automatically. If you have more than one framework set up, you should explicitly specify which framework to use in the config or in the command line (see [options.reference](obsidian://open?vault=Notes&file=Agrippa%20docs%2Freference%2FGeneration%20Options)).
+  - **Framework**: as long as you have one of the supported frameworks installed (React, SolidJS, Preact or React Native), Agrippa should create components for it automatically. If you have more than one framework set up, you should explicitly specify which framework to use in the config (also see the [Config Reference](/reference/config-options#framework)).
 
   - **Typescript**: Agrippa searches a `tsconfig.json` file in your project. If it finds one - it generates Typescript files by default (with all the bells and whistles), otherwise it generates vanilla JavaScript. For more information on configuring this behavior, visit our [Typescript](/environments/typescript) page.
 </Callout>
@@ -69,7 +69,14 @@ Let's take it for a test run:
 Run the following command in your terminal:
 
 ```bash
+# npm
 npx agrippa gen example-component
+
+# yarn
+yarn agrippa gen example-component
+
+# pnpx
+pnpx agrippa gen example-component
 ```
 
 If all is configured correctly, you should see Agrippa's standard output: general information, followed by the list of stages and their results, occasionally followed by some more logs.
