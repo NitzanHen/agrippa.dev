@@ -47,12 +47,12 @@ This, in combination with the [`// @ts-check` comment](https://www.typescriptlan
 
 The config's fields are:
 
-1. **Options**: these configure the main Agrippa process. All option's types, descriptions and defaults can be found on our [Config Options](./config-options) page.
+1. **Options**: these configure the main Agrippa process. All option's types, descriptions and defaults can be found on our [Config Options](/reference/config-options) page.
 
 2. **Plugins**: plugins can enhance and extend Agrippa's core capabilities; the config's `plugins` field is where they're declared, as an array.
 
 3. **Files**: this field allows you to augment or override the files that Agrippa searches for and reads when it runs.
-Currently, its only practical usage is to give Agrippa the path to a custom `tsconfig` (for more information, see our [Typescript](../environments/typescript#customize-the-tsconfig-file-path) page).
+Currently, its only practical usage is to give Agrippa the path to a custom `tsconfig` (for more information, see our [Typescript](/environments/typescript#customize-the-tsconfig-file-path) page).
 
 
 ## Specifying path to config

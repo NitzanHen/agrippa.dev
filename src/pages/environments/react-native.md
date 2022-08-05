@@ -41,6 +41,6 @@ export default defineConfig({
 `Environment.REACT_NATIVE` is equivalent to `"react-native"`, but using the built-in `Environment` enum is clearer and less prone to errors.
 
 <Callout type="tip">
-  <p slot="header">Also see our [React](./react) page for react-related docs</p>
+  <p slot="header">Also see our [React](/environments/react) page for react-related docs</p>
 </Callout>
 

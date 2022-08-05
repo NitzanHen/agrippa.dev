@@ -10,7 +10,7 @@ Agrippa is a CLI that helps frontend developers generate new components without 
 It's extremely easy to pick up and use in both new and existing projects, but also has a plugin system that provides customizability when it's necessary.
 
 <Callout type="rocket">
-  <p slot="header">To get started, visit [the tutorial](./getting-started)!</p>
+  <p slot="header">To get started, visit [the tutorial](/getting-started)!</p>
 </Callout>
 
 ```bash
