@@ -126,6 +126,13 @@ Back in your terminal, the output should be similar to this:
 
 Note how Agrippa detects you're working in React and Typescript without any configuration on your part! One of Agrippa's design principle is auto-detection of the project's stack - providing you good results with minimal friction.
 
+## Setting a baseDir
+
+You might also have noticed that the component folder was created in the current working directory - typically, your project's root.
+Many projects, including our setup here, have a specific, nested directory for components in the app - `src/components` in our case. 
+
+TODO
+
 Next, let's add some styles:
 
 ## Adding styles
@@ -249,16 +256,19 @@ pnpx agrippa gen my-fourth-component
 VSCode should automatically open the component declaration in a new tab (or in a new window
 if there aren't any open), and Agrippa should include information about the additional step (the post command) in its output.
 
-Isn't this a simple, elegant productivity trick?
+Isn't this an elegant productivity trick?
 
-## Conclusion
-
-Congratulations! You've completed the tutorial - you installed and initialized Agrippa in a project, and have already created four different components, with different configurations! Hopefully, you got a taste for the tool's simplicity and effectiveness, and you can start using it in your projects.
-
-<!-- ## Where to go next
+## Where to go next
 
 Congratulations! You've completed the tutorial - you installed and initialized Agrippa in a project, and have already created four different components, with different configurations! Hopefully, you got a taste for the tool's simplicity and effectiveness, and you can start using it in your projects.
 
-So, what now? -->
+So, what now? pick your path:
+
+- ❤️ **Join Us** on GitHub or Twitter! We'd love to hear your thoughts and suggestions.
+
+- ⚡ *Become a power user* by learning about more of Agrippa's features and abilities by checking out our guides! See [Automatically open your IDE to a generated component](/guides/automatically-open-your-ide-to-a-generated-component) and [Lint & Prettify created files](/guides/lint-and-prettify-created-files).
+
+- 📚 *Learn more* about Agrippa's support for different environments, its options and interfaces in our environments and reference pages,
+to better understand how it works and how it can be customized for your setup. Check out, for example, our pages on [React](/environments/react), [Base Directories](/reference/base-directories) and [Config Options](/reference/config-options). 
 
 

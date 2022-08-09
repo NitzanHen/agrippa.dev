@@ -47,8 +47,8 @@ export default defineConfig({
 The next and final step is to fill in options based on your project configuration. These change from one project to another but the most common ones are these (see also the examples below):
 
 - **Styling**: Agrippa support a few styling solutions, including CSS, SCSS and styled-components.
-- **Base directory**: a base directory is the directory under which your project's components are located (e.g. `src/components`). For more information, see [[Base directories]].
-- **Post-commands**: a post command is a command that runs after the main Agrippa process completes, and can access some of its data. See its common example usages in [Automatically open an IDE to a generated component](/guides/automatically-open-your-ide-to-a-generated-component) and [Lint & Prettify created files](/guides/lint-and-prettify-created-files), or read more about it in [[Post commands]].
+- **Base directory**: a base directory is the directory under which your project's components are located (e.g. `src/components`). For more information, see [Base directories](/reference/base-directories).
+- **Post-commands**: a post command is a command that runs after the main Agrippa process completes, and can access some of its data. See its common example usages in [Automatically open an IDE to a generated component](/guides/automatically-open-your-ide-to-a-generated-component) and [Lint & Prettify created files](/guides/lint-and-prettify-created-files).
 
 - _(Coming soon)_ Testing frameworks
 - _(Coming soon)_ Storybook
