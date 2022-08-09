@@ -36,6 +36,12 @@ is that options passed to the CLI should be written in kebab case (though camelC
 
 In terms of the options themselves, the differences are:
 
+### CLI exclusive flags
+
+| Flag | description | 
+|--------|-------|
+| `dest` (`destination`) | See [Base Directories](/reference/base-directories) |
+
 ### Aliases
 
 | Option | Alias | 

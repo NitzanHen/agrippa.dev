@@ -36,6 +36,7 @@ export const SIDEBAR = [
 		{ text: 'Write your first plugin (Coming soon)' },
 
 		{ text: 'Reference', header: true },
+		{ text: 'Base Directories', link: 'reference/base-directories' },
 		{ text: 'Config Reference', link: 'reference/config' },
 		{ text: 'Config options', link: 'reference/config-options' },
 		{ text: 'CLI Reference', link: 'reference/cli' },
