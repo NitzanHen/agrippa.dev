@@ -262,9 +262,10 @@ Isn't this an elegant productivity trick?
 
 Congratulations! You've completed the tutorial - you installed and initialized Agrippa in a project, and have already created four different components, with different configurations! Hopefully, you got a taste for the tool's simplicity and effectiveness, and you can start using it in your projects.
 
-So, what now? pick your path:
+So, what's next? pick your path:
 
-- ❤️ **Join Us** on GitHub or Twitter! We'd love to hear your thoughts and suggestions.
+- ❤️ [**Join Us**](https://github.com/NitzanHen/agrippa) on GitHub! 
+We'd also love to hear your thoughts and suggestions about Agrippa - as a [GitHub issue](https://github.com/NitzanHen/agrippa/issues) or on (my personal) [Twitter](https://twitter.com/nitzanhen).
 
 - ⚡ *Become a power user* by learning about more of Agrippa's features and abilities by checking out our guides! See [Automatically open your IDE to a generated component](/guides/automatically-open-your-ide-to-a-generated-component) and [Lint & Prettify created files](/guides/lint-and-prettify-created-files).
 
