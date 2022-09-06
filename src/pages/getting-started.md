@@ -69,8 +69,6 @@ pnpm add -D agrippa@beta
 Then, let's create a **config file** - this is you can configure Agrippa for your current project.
 In your terminal, run:
 
-
-
 ```bash
 # npm
 npx agrippa init
@@ -79,7 +77,7 @@ npx agrippa init
 yarn agrippa init
 
 # pnpm
-pnpx agrippa init
+pnpm exec agrippa init
 ```
 
 You should now see a new file in your root directory (where `agrippa init` was called), `agrippa.config.mjs`. Its contents should look like this:
@@ -105,11 +103,11 @@ Let's start with a basic one. In your terminal, run:
 # npm
 npx agrippa gen my-first-component
 
-# yarn (todo test)
+# yarn
 yarn agrippa gen my-first-component
 
-# pnpm (todo test)
-pnpx agrippa gen my-first-component
+# pnpm
+pnpm exec agrippa gen my-first-component
 ```
 
 Congratulations, you've just generated your first component with Agrippa 🎉🎉
@@ -129,9 +127,41 @@ Note how Agrippa detects you're working in React and Typescript without any conf
 ## Setting a baseDir
 
 You might also have noticed that the component folder was created in the current working directory - typically, your project's root.
-Many projects, including our setup here, have a specific, nested directory for components in the app - `src/components` in our case. 
+Many projects, including our setup here, have a specific directory for components in the app - `src/components` in our case. 
 
-TODO
+We can tell Agrippa to treat a given path as the base directory for all components through the `baseDir` option.
+Augment `agrippa.config.mjs` like so:
+ 
+```js
+// @ts-check
+import { defineConfig, Styling } from "agrippa";
+
+export default defineConfig({
+  options: {
+    baseDir: 'src/components', // new line
+  },
+});
+```
+
+Now, let's create another component:
+```bash
+# npm
+npx agrippa gen my-second-component
+
+# yarn
+yarn agrippa gen my-second-component
+
+# pnpm
+pnpm exec agrippa gen my-second-component
+```
+
+Now the component files should be created under `src/components/MySecondComponent`:
+![MySecondComponent output](/tutorial-example-output-second.png)
+
+<Callout type="tip">
+You can also tell Agrippa to generate a component *relative* to the base directory (as opposed to a direct children of it).
+For more information, check out  [Base Directories](/reference/base-directories).
+</Callout>
 
 Next, let's add some styles:
 
@@ -147,6 +177,7 @@ import { defineConfig, Styling } from "agrippa";
 
 export default defineConfig({
   options: {
+    baseDir: 'src/components',
     styling: Styling.CSS, // new line
   },
 });
@@ -154,21 +185,21 @@ export default defineConfig({
 
 `Styling.CSS` is equivalent to `"css"`, but using the built-in `Styling` enum is clearer and less prone to errors.
 
-Now, let's create another component:
+Let's test it out:
 
 ```bash
 # npm
-npx agrippa gen my-second-component
+npx agrippa gen my-third-component
 
-# yarn (todo test)
-yarn agrippa gen my-second-component
+# yarn
+yarn agrippa gen my-third-component
 
-# pnpm (todo test)
-pnpx agrippa gen my-second-component
+# pnpm
+pnpm exec agrippa gen my-third-component
 ```
 
 This time, the output should also contain information about a created CSS file:
-![MySecondComponent output](/tutorial-example-output-second.png)
+![MyThirdComponent output](/tutorial-example-output-third.png)
 
 Note that the created file is by default a CSS module.
 
@@ -181,26 +212,27 @@ import { defineConfig, Styling } from "agrippa";
 
 export default defineConfig({
   options: {
-    styling: Styling.STYLED_COMPONENTS, // modified line!
+    baseDir: 'src/components',
+    styling: Styling.STYLED_COMPONENTS, // modified line
   },
 });
 ```
 
-And create a third component:
+And create a fourth component:
 
 ```bash
 # npm
-npx agrippa gen my-third-component
+npx agrippa gen my-fourth-component
 
-# yarn (todo test)
-yarn agrippa gen my-third-component
+# yarn
+yarn agrippa gen my-fourth-component
 
-# pnpm (todo test)
-pnpx agrippa gen my-third-component
+# pnpm
+pnpm exec agrippa gen my-fourth-component
 ```
 
-Now, the output should contain information about `MyThirdComponent.styles.ts` being created:
-![MyThirdComponent output](/tutorial-example-output-third.png)
+Now, the output should contain information about `MyFourthComponent.styles.ts` being created:
+![MyFourthComponent output](/tutorial-example-output-fourth.png)
 
 <Callout type="tip">
 	<p slot="header">Tip: Overriding styles</p>
@@ -229,6 +261,7 @@ import { defineConfig, Styling, PostCommandPlugin } from "agrippa";
 
 export default defineConfig({
   options: {
+    baseDir: 'src/components',
     styling: Styling.STYLED_COMPONENTS,
   },
   // new lines
@@ -244,13 +277,13 @@ In your terminal, create yet another component:
 
 ```bash
 # npm
-npx agrippa gen my-fourth-component
+npx agrippa gen my-fifth-component
 
-# yarn (todo test)
-yarn agrippa gen my-fourth-component
+# yarn
+yarn agrippa gen my-fifth-component
 
-# pnpm (todo test)
-pnpx agrippa gen my-fourth-component
+# pnpm
+pnpm exec agrippa gen my-fifth-component
 ```
 
 VSCode should automatically open the component declaration in a new tab (or in a new window
@@ -269,7 +302,6 @@ We'd also love to hear your thoughts and suggestions about Agrippa - as a [GitHu
 
 - ⚡ *Become a power user* by learning about more of Agrippa's features and abilities by checking out our guides! See [Automatically open your IDE to a generated component](/guides/automatically-open-your-ide-to-a-generated-component) and [Lint & Prettify created files](/guides/lint-and-prettify-created-files).
 
-- 📚 *Learn more* about Agrippa's support for different environments, its options and interfaces in our environments and reference pages,
-to better understand how it works and how it can be customized for your setup. Check out, for example, our pages on [React](/environments/react), [Base Directories](/reference/base-directories) and [Config Options](/reference/config-options). 
+- 📚 *Learn more* about Agrippa's options, features and interfaces in our environment and reference pages. Check out, for example, our pages on [React](/environments/react), [Base Directories](/reference/base-directories) and [Config Options](/reference/config-options). 
 
 
