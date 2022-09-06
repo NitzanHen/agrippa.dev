@@ -1,6 +1,5 @@
 ---
 import HeadCommon from '../components/HeadCommon.astro';
-import HeadSEO from '../components/HeadSEO.astro';
 import Header from '../components/Header/Header.astro';
 import PageContent from '../components/PageContent/PageContent.astro';
 import LeftSidebar from '../components/LeftSidebar/LeftSidebar.astro';
@@ -15,7 +14,6 @@ const currentPage = new URL(Astro.request.url).pathname;
 
 <head>
 	<HeadCommon />
-	<HeadSEO {content} canonicalURL={Astro.canonicalURL} />
 	<title>{content.title ? `${content.title} - ${CONFIG.SITE.title}` : CONFIG.SITE.title}</title>
 	<style>
 		body {
