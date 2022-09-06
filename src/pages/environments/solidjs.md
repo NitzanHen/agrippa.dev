@@ -13,7 +13,7 @@ Core functionality should work out of the box - Agrippa automatically detects So
 
 <Callout type="warning">
   <p slot="header">This feature is looking for active feedback</p>
-If you're using Agrippa in a SolidJS project, we'd love to hear your thoughts and suggestions (how?)
+If you're using Agrippa in a SolidJS project, we'd love to hear your thoughts and suggestions. Find us on <a href="https://github.com/NitzanHen/agrippa/issues">GitHub</a> or (my personal) <a href="https://twitter.com/nitzanhen">Twitter</a><span>.</span>
 </Callout>
 
 ## Auto-detection and explicitly setting the environment

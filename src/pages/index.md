@@ -47,6 +47,7 @@ Agrippa supports many frameworks, styling solutions, and other technologies, wit
 ## Community
 
 If you like Agrippa, [join us on GitHub](https://github.com/NitzanHen/agrippa)!
+If you encounter any bugs or errors, or have any feature suggestions, please [open an issue](https://github.com/NitzanHen/agrippa/issues) there!
 
 Also, I'm not actively posting too much on Twitter (definitely not enough to maintain an Agrippa twitter page 😅), but **I'd be more than happy to hear your toughts on Agrippa and discuss it with you!** Find me [@nitzanhen](https://twitter.com/nitzanhen).
 
