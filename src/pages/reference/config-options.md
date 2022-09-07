@@ -128,9 +128,6 @@ By default, Agrippa prevents the generation of a component over an existing comp
 **Type**: `boolean`. <br/>
 **Default**: `false`.
 
-## pure
-
-
 ## lookForUpdates
 
 When Agrippa is run, it pings the NPM registry and checks whether a newer version exists.
