@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Agrippa
+title: Getting Started
 description: Agrippa's introductory tutorial
 setup: |
   import Callout from '../components/Callout.astro'

@@ -15,7 +15,7 @@ export const OPEN_GRAPH = {
 };
 
 export const SIDEBAR = [
-		{ text: 'Getting Started with Agrippa', link: 'getting-started' },
+		{ text: 'Getting Started', link: 'getting-started' },
 
 		{ text: 'Environments', header: true },
 		{ text: 'Typescript', link: 'environments/typescript' },
