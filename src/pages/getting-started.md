@@ -298,7 +298,7 @@ Congratulations! You've completed the tutorial - you installed and initialized A
 So, what's next? pick your path:
 
 - ❤️ [**Join Us**](https://github.com/NitzanHen/agrippa) on GitHub! 
-We'd also love to hear your thoughts and suggestions about Agrippa - as a [GitHub issue](https://github.com/NitzanHen/agrippa/issues) or on (my personal) [Twitter](https://twitter.com/nitzanhen).
+We'd also love to hear your thoughts and suggestions about Agrippa - as a [GitHub issue](https://github.com/NitzanHen/agrippa/issues) or on [Twitter](https://twitter.com/nitzanhen).
 
 - ⚡ *Become a power user* by learning about more of Agrippa's features and abilities by checking out our guides! See [Automatically open your IDE to a generated component](/guides/automatically-open-your-ide-to-a-generated-component) and [Lint & Prettify created files](/guides/lint-and-prettify-created-files).
 

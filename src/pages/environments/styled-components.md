@@ -12,7 +12,7 @@ layout: ../../layouts/MainLayout.astro
 
 <Callout type="warning">
   <p slot="header">This feature is looking for active feedback</p>
-If you're using Agrippa with styled-components, we'd love to hear your thoughts and suggestions. Find us on <a href="https://github.com/NitzanHen/agrippa/issues">GitHub</a> or (my personal) <a href="https://twitter.com/nitzanhen">Twitter</a><span>.</span>
+If you're using Agrippa with styled-components, we'd love to hear your thoughts and suggestions. Find us on <a href="https://github.com/NitzanHen/agrippa/issues">GitHub</a> or <a href="https://twitter.com/nitzanhen">Twitter</a><span>.</span>
 </Callout>
 
 ## Enable styled-components styling generation
