@@ -17,9 +17,15 @@ Agrippa can be configured using a config file, `agrippa.config.mjs`, typically l
 Creating a config is straightforward with the `init` command. In your project's root directory, run:
 
 ```bash
+# npm
 npx agrippa init
+
+# yarn
+yarn agrippa init
+
+# pnpm
+pnpm exec agrippa init
 ```
-(TODO yarn/pnpm alternatives)
 
 The command should create a new file, `agrippa.config.mjs`, whose contents look like this:
 

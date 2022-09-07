@@ -64,11 +64,11 @@ Let's try it out with an example component:
 # npm
 npx agrippa gen post-command-test
 
-# yarn (todo test)
+# yarn
 yarn agrippa gen post-command-test
 
-# pnpm (todo test)
-pnpx agrippa gen post-command-test
+# pnpm
+pnpm exec agrippa gen post-command-test
 ```
 
 Agrippa's output should include info about an additional "Post command" stage being successful, and your IDE should already be open on the newly generated file! 

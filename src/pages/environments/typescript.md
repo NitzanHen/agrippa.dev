@@ -69,7 +69,7 @@ export default defineConfig({
   //...
 
   files: {
-    tsconfig: "path/to/tsconfig.json", //TODO test
+    tsconfig: "path/to/tsconfig.json"
   },
 });
 ```

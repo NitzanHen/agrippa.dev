@@ -42,7 +42,7 @@ export default defineConfig({
   },
   // new lines below
   plugins: [
-    new PostCommandPlugin('eslint <componentPath> TODO TEST')
+    new PostCommandPlugin('eslint <componentPath>')
   ]
 });
 ```
@@ -53,11 +53,11 @@ Let's try it out with an example component:
 # npm
 npx agrippa gen formatting-test
 
-# yarn (todo test)
+# yarn
 yarn agrippa gen formatting-test
 
-# pnpm (todo test)
-pnpx agrippa gen formatting-test
+# pnpm
+pnpm exec agrippa gen formatting-test
 ```
 
 Agrippa's output should include info about an additional "Post command" stage being successful, and the generated file should already be linted! 

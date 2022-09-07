@@ -251,7 +251,7 @@ An important aspect of Agrippa is its **plugin system**. Let's augment Agrippa's
 
 A _post command_ is a command that runs after Agrippa's main process. It has access to some of the values Agrippa determines, and particularly - _the paths of the created files_. This allows us to run side effects on created files.
 
-One neat such side effect is **opening your IDE at the generated component file**, immediately after generating it. Our example will use [Visual Studio Code](https://code.visualstudio.com/), but this works with practically [any other common IDE (todo)](/guides/automatically-open-your-ide-to-a-generated-component) too.
+One neat such side effect is **opening your IDE at the generated component file**, immediately after generating it. Our example will use [Visual Studio Code](https://code.visualstudio.com/), but this works with practically [any other common IDE](/guides/automatically-open-your-ide-to-a-generated-component) too.
 
 Back in `agrippa.config.mjs`, add the following lines:
 
