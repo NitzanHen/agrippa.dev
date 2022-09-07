@@ -15,7 +15,7 @@ It's extremely easy to pick up and use in both new and existing projects, but al
 
 ```bash
 # 1. Install as dev dep
-npm add -D agrippa@beta
+npm add -D agrippa
  
 # 2. Create a config
 npx agrippa init

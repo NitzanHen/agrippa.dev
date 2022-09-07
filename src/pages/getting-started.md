@@ -59,11 +59,11 @@ Next, let's install Agrippa:
 
 ```bash
 # npm
-npm i -D agrippa@beta
+npm i -D agrippa
 # or
-yarn add --dev agrippa@beta
+yarn add --dev agrippa
 # or
-pnpm add -D agrippa@beta
+pnpm add -D agrippa
 ```
 
 Then, let's create a **config file** - this is you can configure Agrippa for your current project.
