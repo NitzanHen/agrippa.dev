@@ -28,6 +28,7 @@ export const SIDEBAR = [
 		{ text: 'Storybook (Coming soon)' },
 		{ text: 'CSS', link: 'environments/css' },
 		{ text: 'SCSS', link: 'environments/scss' },
+		{ text: 'styled-components', link: 'environments/styled-components' },
 
 		{ text: 'Guides', header: true },
 		{ text: 'Set up Agrippa in a project', link: 'guides/setup-agrippa-in-a-project' },
