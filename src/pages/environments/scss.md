@@ -30,7 +30,7 @@ export default defineConfig({
 });
 ```
 
-`Styling.SCSS` is equivalent to `"scss"`, but using the built-in `Environment` enum is clearer and less prone to errors.
+`Styling.SCSS` is equivalent to `"scss"`, but using the built-in `Styling` enum is clearer and less prone to errors.
 
 ## Toggle SCSS Modules on or off
 
