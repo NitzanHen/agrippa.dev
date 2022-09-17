@@ -11,11 +11,6 @@ layout: ../../layouts/MainLayout.astro
 Core functionality should work out of the box - Agrippa automatically detects React Native projects in typical setups, and generates components accordingly.
 </Callout>
 
-<Callout type="warning">
-  <p slot="header">This feature is looking for active feedback</p>
-If you're using Agrippa in a React Native project, we'd love to hear your thoughts and suggestions. Find us on <a href="https://github.com/NitzanHen/agrippa/issues">GitHub</a> or <a href="https://twitter.com/nitzanhen">Twitter</a><span>.</span>
-</Callout>
-
 ## Auto-detection and explicitly setting the framework
 
 Agrippa's auto-detection determines which framework is used in your environment through your `package.json`'s dependencies. Particularly, React Native is detected through the `react-native` package. <br/>
