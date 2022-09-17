@@ -40,10 +40,6 @@ export default defineConfig({
 
 `Framework.REACT_NATIVE` is equivalent to `"react-native"`, but using the built-in `Framework` enum is clearer and less prone to errors.
 
-<Callout type="tip">
-  <p slot="header">Also see our [React](/environments/react) page for react-related docs</p>
-</Callout>
-
 ## React Native Styling
 
 Agrippa can be configured to generate a `StyleSheet.create({})` declaration for your react-native components. This can be done by setting `options.styling` to `Styling.REACT_NATIVE` in the config:
@@ -64,3 +60,7 @@ export default defineConfig({
 ```
 
 `Styling.REACT_NATIVE` is equivalent to `"react-native"`, but using the built-in `Styling` enum is clearer and less prone to errors.
+
+<Callout type="tip">
+  <p slot="header">Also see our [React](/environments/react) page for react-related docs</p>
+</Callout>
