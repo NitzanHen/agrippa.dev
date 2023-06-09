@@ -149,7 +149,7 @@ The purpose of this is to allow us to gain basic insights of how people use Agri
 You can find the relevant source code in [`TelemetryPlugin.ts`](https://github.com/NitzanHen/agrippa/blob/main/src/plugin/TelemetryPlugin.ts).
 
 **Type**: `boolean`. <br/>
-**Default**: `true`.
+**Default**: `false`.
 
 ## debug
 
